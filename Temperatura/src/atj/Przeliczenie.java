@@ -34,10 +34,10 @@ public class Przeliczenie extends HttpServlet {
 	public double przelicz(double value1, String oper) {
 		double wynik = 0;
 		if (oper.equalsIgnoreCase("CF")) {
-			return wynik = (value1 * 1.8000) + 32;
+			return wynik = ((value1 * (5.0/9.0) +32.0)); 
 		}
 		if (oper.equalsIgnoreCase("FC")) {
-			return wynik = (value1 - 32) * 1.8000;
+			return wynik = ((value1 -32) * (5.0/9.0));
 		}
 		return 0;
 	}
